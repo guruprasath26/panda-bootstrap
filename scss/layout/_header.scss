@@ -1,0 +1,31 @@
+/* Layout -> Header Styles */
+
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 30px;
+    padding-bottom: 0;
+    @include transition-all;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    .logoLetters {
+        font-weight: 900;
+        font-size: 1.25em;
+        font-family: 'freight-display-pro'
+    }
+    .logo {
+        width: 50px;
+        @include mq ($from: tablet) {
+            width: 75px;
+        }
+    }
+}

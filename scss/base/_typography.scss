@@ -1,0 +1,54 @@
+/* Base -> Typography Styles */
+
+* {
+    font-family: 'sofia-pro-soft';
+}
+
+body {
+    font-size: 110%;
+    color: map-get($color, 'foreground');
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'freight-display-pro';
+    font-weight: 900;
+}
+
+h1 {
+    margin: 0.2em 0;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.bigHeader {
+    font-size: 2.5em;
+    @include mq($from: tablet) {
+        font-size: 3em;
+    }
+}
+
+.gradientText {
+    background: -webkit-linear-gradient(180deg, #a13bfd, #32dbf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// Highlighting text
+::-moz-selection {
+    /* Code for Firefox */
+    color: map-get($selection, 'background');
+    background: map-get($selection, 'color');
+}
+
+::selection {
+    /* Code for Firefox */
+    color: map-get($selection, 'background');
+    background: map-get($selection, 'color');
+}

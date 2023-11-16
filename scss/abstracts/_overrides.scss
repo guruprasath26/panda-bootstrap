@@ -1,0 +1,30 @@
+.tablet-hidden {
+    @include mq($from: tablet) {
+        display: none;
+    }
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.center {
+	text-align: center;
+}
+
+.hideUp {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+.hidden {
+	display: none;
+}
+
+.flashAnimation {
+    animation: listItemFlash 2s ease;
+}
+
+.flashBeingMoved {
+    background-color: $color-primary!important;
+}
